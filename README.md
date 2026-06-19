@@ -4,7 +4,7 @@
 **Student Number:** ST10500573 
 **Module Code:** WEDE5020 — Web Development  
 **Submission Date:** 19 June 2026  
-**Live Deployment URL:** https://st0ne1998.github.io/TUSHA-F/  
+**Live Deployment URL:** https://st0ne1998.github.io/Tusha-POE3/
 **GitHub Repository:** https://github.com/st0ne1998/TUSHA-F
 
 ---
