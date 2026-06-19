@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Tusha Petals & Gifts. Send custom item order metrics summaries, estimate costs, or submit validation queries." />
+  <title>Contact &amp; Custom Orders – Tusha Petals &amp; Gifts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lato:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="site-nav" id="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-name">Tusha Petals</span>
+        <span class="logo-tagline">Mbombela's Finest Florist</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="shop.html">Shop Collections</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+        <li><a href="https://wa.me/27728357337" class="nav-cta" target="_blank">Order Via WhatsApp</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-banner">
+    <div class="container">
+      <span class="section-label">Connect Here</span>
+      <h1>Custom Order <em>Inquiries</em></h1>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">›</span> <span class="current" aria-current="page">Contact</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <div class="contact-info">
+          <h2>Visit Our <em>Boutique</em></h2>
+          <p style="margin-bottom: 2rem;">Stop by our physical store or fill out the advanced configuration estimation form to request a prompt quote calculation profile package.</p>
+          <div class="contact-meta-item"><strong>📍 Address:</strong> Shop 6, Brown Street, Mbombela, 1200</div>
+          <div class="contact-meta-item"><strong>📞 Phone:</strong> +27 72 835 7337</div>
+          
+          <div class="map-embed-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.734608301716!2d30.9790432!3d-25.4721453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee84a4b1234567f%3A0x87654321fedcba98!2sBrown%20St%2C%20Mbombela!5e0!3m2!1sen!2sza!4v1717000000000!5m2!1sen!2sza" width="100%" height="250" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form id="advancedOrderForm" class="interactive-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+            
+            <div class="form-row">
+              <label for="clientName">Full Name</label>
+              <input type="text" id="clientName" name="name" required minlength="2" placeholder="Your Name" />
+            </div>
+            
+            <div class="form-row">
+              <label for="clientEmail">Email Address</label>
+              <input type="email" id="clientEmail" name="email" required placeholder="name@domain.com" />
+            </div>
+
+            <div class="form-row">
+              <label for="arrangementType">Select Arrangement Type</label>
+              <select id="arrangementType" name="arrangement_type" required>
+                <option value="" disabled selected>-- Choose Option --</option>
+                <option value="classic" data-price="450">Classic Mixed Bouquet (R 450.00)</option>
+                <option value="luxury" data-price="850">Luxury Heart Box Selection (R 850.00)</option>
+                <option value="grand" data-price="1800">100 Red Roses Grand Tier (R 1,800.00)</option>
+                <option value="hamper" data-price="650">Gourmet Gift Hamper Tray (R 650.00)</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="itemQuantity">Arrangement Item Count Volume</label>
+              <input type="number" id="itemQuantity" name="quantity" required value="1" placeholder="Quantity" />
+            </div>
+
+            <div id="costCalculationResult" class="cost-summary-box" style="display:none;"></div>
+
+            <div id="validationFeedback" class="form-feedback-box" aria-live="polite"></div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Submit Order Request</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container"><p>&copy; 2026 Tusha Petals &amp; Gifts. All Rights Reserved.</p></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

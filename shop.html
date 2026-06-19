@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse Tusha Petals & Gifts premium catalog collections. Filter by category, price, or search our luxury arrangements live." />
+  <title>Shop Collections – Tusha Petals & Gifts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lato:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="site-nav" id="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-name">Tusha Petals</span>
+        <span class="logo-tagline">Mbombela's Finest Florist</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="shop.html" class="active">Shop Collections</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://wa.me/27728357337" class="nav-cta" target="_blank">Order Via WhatsApp</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-banner">
+    <div class="container">
+      <span class="section-label">Luxury Catalog</span>
+      <h1>Handcrafted <em>Collections</em></h1>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span aria-hidden="true">›</span> <span class="current" aria-current="page">Shop</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="catalog-section">
+    <div class="container">
+      
+      <div class="filter-controls-wrap">
+        <div class="control-group">
+          <label for="searchInput">Search Collections</label>
+          <input type="text" id="searchInput" placeholder="e.g. Roses, Hampers..." aria-label="Search items" />
+        </div>
+        <div class="control-group">
+          <label for="categoryFilter">Filter Category</label>
+          <select id="categoryFilter" aria-label="Filter by Category">
+            <option value="all">All Product Ranges</option>
+            <option value="bouquets">Luxury Bouquets</option>
+            <option value="boxes">Bespoke Gift Boxes</option>
+            <option value="hampers">Curated Gift Hampers</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="priceSort">Sort Pricing</label>
+          <select id="priceSort" aria-label="Sort by Price">
+            <option value="default">Default Arrangement</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="dynamic-products-grid" class="products-grid">
+        </div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+    <button class="lightbox-close" id="lightbox-close">&times;</button>
+    <div class="lightbox-content-wrap">
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container"><p>&copy; 2026 Tusha Petals &amp; Gifts. All Rights Reserved.</p></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
